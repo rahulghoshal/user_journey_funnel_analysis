@@ -1,0 +1,32 @@
+{
+  "title": "Retail Intelligence: 100K User Behavior Dataset",
+  "id": "noopurbhatt/retail-intelligence-100k-user-behavior-dataset",
+  "licenses": [{"name": "CC0-1.0"}],
+  "resources": [
+    {
+      "path": "retail_user_behavior_100k.csv",
+      "schema": {
+        "fields": [
+          {"name": "session_id", "description": "Unique identifier for a user session."},
+          {"name": "user_id", "description": "Anonymized user identifier."},
+          {"name": "timestamp_utc", "description": "UTC timestamp of the interaction event."},
+          {"name": "event_index", "description": "Position of the event within the session."},
+          {"name": "user_action", "description": "Type of user interaction such as view, click, add_to_cart, purchase, or drop."},
+          {"name": "product_id", "description": "Unique identifier for the product."},
+          {"name": "category", "description": "Product category."},
+          {"name": "brand", "description": "Product brand."},
+          {"name": "price", "description": "Product price."},
+          {"name": "channel", "description": "Platform where interaction occurred (web, mobile, app)."},
+          {"name": "device_type", "description": "Type of device used by the user."},
+          {"name": "region", "description": "Geographic region of the user."},
+          {"name": "traffic_source", "description": "Source from which the user arrived."},
+          {"name": "time_spent_sec", "description": "Time spent on the interaction in seconds."},
+          {"name": "session_length", "description": "Total number of events in the session."},
+          {"name": "interaction_count", "description": "Running count of interactions within the session."},
+          {"name": "is_conversion", "description": "Indicates whether the interaction resulted in a purchase (1 or 0)."},
+          {"name": "drop_off_flag", "description": "Indicates whether the session ended without conversion (1 or 0)."}
+        ]
+      }
+    }
+  ]
+}
